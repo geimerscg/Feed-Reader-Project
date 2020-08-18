@@ -31,12 +31,12 @@ $(function() {
             expect(document.body.classList.contains('menu-hidden')).toBe(true);
         });
         //check to ensure the menu changes visibility when click events are triggered.
-        // it('becomes visable when clicked', function() {
-        //     $('.menu-icon-link').trigger('click');
-        //     expect($('body').hasClass('menu-hidden')).toBe(false);
-        //     $('.menu-icon-link').trigger('click');
-        //     expect($('body').hasClass('menu-hidden')).toBe(true);
-        // });
+        it('becomes visable when clicked', function() {
+            $('.menu-icon-link').trigger('click');
+            expect($('body').hasClass('menu-hidden')).toBe(false);
+            $('.menu-icon-link').trigger('click');
+            expect($('body').hasClass('menu-hidden')).toBe(true);
+        });
 
 
     });
